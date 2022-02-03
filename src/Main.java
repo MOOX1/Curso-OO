@@ -32,14 +32,23 @@ public class Main {
         Dev devVitor = new Dev();
         devVitor.setNome("Vitor");
         devVitor.inscreverBootCamp(bootCamp);
+        devVitor.progredir();
+        devVitor.progredir();
 
-        System.out.println("conteudos inscritos " + devVitor.getConteudosInscritos());
+        System.out.println("conteudos inscritos " + devVitor.
+        getConteudosInscritos());
+        System.out.println("...");
+        System.out.println("conteudos Concluidos " + devVitor.getConteudoConcluidos());
 
         Dev devPedro = new Dev();
         devPedro.setNome("Pedro");
         devPedro.inscreverBootCamp(bootCamp);
+        devPedro.progredir();
 
+        System.out.println(".....................");
         System.out.println("conteudos inscritos " + devPedro.getConteudosInscritos());
+        System.out.println("...");
+        System.out.println("conteudos Concluidos " + devVitor.getConteudoConcluidos());
 
 
     }
